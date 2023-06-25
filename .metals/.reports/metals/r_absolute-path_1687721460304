@@ -1,0 +1,4 @@
+Uri: jdt://contents/flink-core-1.14.6.jar/org.apache.flink.configuration/ConfigConstants.class?%3Dflink-state%2F%5C%2Fhome%5C%2Flslonina%5C%2F.gradle%5C%2Fcaches%5C%2Fmodules-2%5C%2Ffiles-2.1%5C%2Forg.apache.flink%5C%2Fflink-core%5C%2F1.14.6%5C%2Fe241ed705498df4286b6fd036efeb7b6cd721e97%5C%2Fflink-core-1.14.6.jar%3D%2Fgradle_used_by_scope%3D%2Fmain%2Ctest%3D%2F%3Corg.apache.flink.configuration%28ConfigConstants.class
+
+Error message: Provider "jdt" not installed
+Error: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed

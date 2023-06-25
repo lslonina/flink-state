@@ -1,0 +1,832 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "flink-state",
+        "directory": "/home/lslonina/projects/flink-state",
+        "workspaceDir": "/home/lslonina/projects/flink-state",
+        "sources": [
+            "/home/lslonina/projects/flink-state/src/main/java"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime-web_2.12/1.14.6/a04fb01a158d302396ab18a9abfc69d01edd1d16/flink-runtime-web_2.12-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-clients_2.12/1.14.6/99c23f149cd6d4c087be7dd29e214cb2f19096c2/flink-clients_2.12-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-streaming-java_2.12/1.14.6/1a19d0eb6e8147381f3c29c84ee33406328235a2/flink-streaming-java_2.12-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-optimizer/1.14.6/79d1d31bdf95dd7b024facb5d5fcbfbe3a1daaf2/flink-optimizer-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime/1.14.6/c58b413f6aa3035246da19f57e38afa6d2397435/flink-runtime-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-scala_2.12/1.14.6/ff9e68e8d8cb35fa462d821b85f7a1e29ac05d42/flink-scala_2.12-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-java/1.14.6/6a9b61ddde69d7f2b3589ac80ee5e09567eb1af0/flink-java-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-statebackend-rocksdb_2.12/1.14.6/da2198f9d706126a0a291476b4c5ca11f6007677/flink-statebackend-rocksdb_2.12-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-queryable-state-client-java/1.14.6/3326e0e1a30c5dd36dfb17a95b31541466a1afd0/flink-queryable-state-client-java-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-netty/4.1.65.Final-14.0/e1b2434e2aef7d00918bf0f9bdc8ef395b2136dd/flink-shaded-netty-4.1.65.Final-14.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-file-sink-common/1.14.6/9774a0e7a6bde25c150135f28874e5e31862e0e5/flink-file-sink-common-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-akka-loader/1.14.6/152f90f242c9d71018986c0cfc715716be8600c4/flink-rpc-akka-loader-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-hadoop-fs/1.14.6/6bfbd9af95e98ce01d033895e918117f6ec621f5/flink-hadoop-fs-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-core/1.14.6/e241ed705498df4286b6fd036efeb7b6cd721e97/flink-core-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-guava/30.1.1-jre-14.0/78af6143a92912e0f084490fe5a8b175e541ce32/flink-shaded-guava-30.1.1-jre-14.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-jackson/2.12.4-14.0/6cd52de8793bda639c68b7beabd1f9aa9b6e0c14/flink-shaded-jackson-2.12.4-14.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-core/1.14.6/e0c0b28d3e96d02e71afca4d0e1c052b142fafe5/flink-rpc-core-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-annotations/1.14.6/d3515f3e849b0539829c3d7fe48eead3ee8d597d/flink-annotations-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-metrics-core/1.14.6/d309d2263f2f1f39904cc22d1684503be9e09ea9/flink-metrics-core-1.14.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-force-shading/14.0/fbb920848d55aa214ec4501af955acfd3118441f/flink-shaded-force-shading-14.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.5/13af68e9a11576953f5c4b09436f8207be9d3a27/commons-math3-3.5.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.ververica/frocksdbjni/6.20.3-ververica-1.0/bcdbcd6b5cc2daa68b90d94666c35ad6e6a6cc61/frocksdbjni-6.20.3-ververica-1.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.8.0/92999e26e6534606b5678014e66948286298a35c/commons-io-2.8.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-zookeeper-3/3.4.14-14.0/47cb3abb9267c78c13b05aca07e4dac0426ebebb/flink-shaded-zookeeper-3-3.4.14-14.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.24.0-GA/d7466fc2e3af7c023e95c510f06448ad29b225b3/javassist-3.24.0-GA.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.3/2c58fa5745831afa3a4290c2ce15553ff13ad0ab/snappy-java-1.1.8.3.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/4b986a99445e49ea5fbf5d149c4b63f6ed6c6780/lz4-java-1.8.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-asm-7/7.1-14.0/b1a61ed357e24720273432e3e4d883a67ed35a56/flink-shaded-asm-7-7.1-14.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.kryo/kryo/2.24.0/c6b206e80cfd97e66a1364003724491c757b92f/kryo-2.24.0.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.12.7/a393b72134dff0751d5110c3e4808689deba75c1/scala-compiler-2.12.7.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.7/c5a8eb12969e77db4c0dd785c104b59d226b8265/scala-reflect-2.12.7.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.0.6/e22de3366a698a9f744106fb6dda4335838cf6a7/scala-xml_2.12-1.0.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.7/18c09ad08ec783f5074f4a0d6308a78759000cb1/scala-library-2.12.7.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill_2.12/0.7.6/37ab91c4029e8c34f39bfc6c2c7735ba69c6f53f/chill_2.12-0.7.6.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.minlog/minlog/1.2/59bfcd171d82f9981a5e242b9e840191f650e209/minlog-1.2.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/87c0ea803b69252868d09308b4618f766f135a96/objenesis-2.1.jar",
+            "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill-java/0.7.6/a74b8d019d6941d82ff86d1612e382f4a0ae8259/chill-java-0.7.6.jar"
+        ],
+        "out": "/home/lslonina/projects/flink-state/.bloop/flink-state/build",
+        "classesDir": "/home/lslonina/projects/flink-state/.bloop/flink-state/build/classes",
+        "resources": [
+            "/home/lslonina/projects/flink-state/src/main/resources"
+        ],
+        "java": {
+            "options": [
+                "-source",
+                "11",
+                "-target",
+                "11",
+                "-h",
+                "/home/lslonina/projects/flink-state/build/generated/sources/headers/java/main",
+                "-g",
+                "-sourcepath",
+                "",
+                "-proc:none",
+                "-XDuseUnsharedTable=true"
+            ]
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-11-openjdk-11.0.19.0.7-1.fc38.x86_64",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                "com.lslonina.flink.FlinkApplication"
+            ],
+            "classpath": [
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime-web_2.12/1.14.6/a04fb01a158d302396ab18a9abfc69d01edd1d16/flink-runtime-web_2.12-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-clients_2.12/1.14.6/99c23f149cd6d4c087be7dd29e214cb2f19096c2/flink-clients_2.12-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-streaming-java_2.12/1.14.6/1a19d0eb6e8147381f3c29c84ee33406328235a2/flink-streaming-java_2.12-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-optimizer/1.14.6/79d1d31bdf95dd7b024facb5d5fcbfbe3a1daaf2/flink-optimizer-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime/1.14.6/c58b413f6aa3035246da19f57e38afa6d2397435/flink-runtime-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-scala_2.12/1.14.6/ff9e68e8d8cb35fa462d821b85f7a1e29ac05d42/flink-scala_2.12-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-java/1.14.6/6a9b61ddde69d7f2b3589ac80ee5e09567eb1af0/flink-java-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-statebackend-rocksdb_2.12/1.14.6/da2198f9d706126a0a291476b4c5ca11f6007677/flink-statebackend-rocksdb_2.12-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-queryable-state-client-java/1.14.6/3326e0e1a30c5dd36dfb17a95b31541466a1afd0/flink-queryable-state-client-java-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-netty/4.1.65.Final-14.0/e1b2434e2aef7d00918bf0f9bdc8ef395b2136dd/flink-shaded-netty-4.1.65.Final-14.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-file-sink-common/1.14.6/9774a0e7a6bde25c150135f28874e5e31862e0e5/flink-file-sink-common-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-akka-loader/1.14.6/152f90f242c9d71018986c0cfc715716be8600c4/flink-rpc-akka-loader-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-hadoop-fs/1.14.6/6bfbd9af95e98ce01d033895e918117f6ec621f5/flink-hadoop-fs-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-core/1.14.6/e241ed705498df4286b6fd036efeb7b6cd721e97/flink-core-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-guava/30.1.1-jre-14.0/78af6143a92912e0f084490fe5a8b175e541ce32/flink-shaded-guava-30.1.1-jre-14.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-jackson/2.12.4-14.0/6cd52de8793bda639c68b7beabd1f9aa9b6e0c14/flink-shaded-jackson-2.12.4-14.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-core/1.14.6/e0c0b28d3e96d02e71afca4d0e1c052b142fafe5/flink-rpc-core-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-annotations/1.14.6/d3515f3e849b0539829c3d7fe48eead3ee8d597d/flink-annotations-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-metrics-core/1.14.6/d309d2263f2f1f39904cc22d1684503be9e09ea9/flink-metrics-core-1.14.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-force-shading/14.0/fbb920848d55aa214ec4501af955acfd3118441f/flink-shaded-force-shading-14.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.5/13af68e9a11576953f5c4b09436f8207be9d3a27/commons-math3-3.5.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.ververica/frocksdbjni/6.20.3-ververica-1.0/bcdbcd6b5cc2daa68b90d94666c35ad6e6a6cc61/frocksdbjni-6.20.3-ververica-1.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.8.0/92999e26e6534606b5678014e66948286298a35c/commons-io-2.8.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-zookeeper-3/3.4.14-14.0/47cb3abb9267c78c13b05aca07e4dac0426ebebb/flink-shaded-zookeeper-3-3.4.14-14.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.24.0-GA/d7466fc2e3af7c023e95c510f06448ad29b225b3/javassist-3.24.0-GA.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.3/2c58fa5745831afa3a4290c2ce15553ff13ad0ab/snappy-java-1.1.8.3.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/4b986a99445e49ea5fbf5d149c4b63f6ed6c6780/lz4-java-1.8.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-asm-7/7.1-14.0/b1a61ed357e24720273432e3e4d883a67ed35a56/flink-shaded-asm-7-7.1-14.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.kryo/kryo/2.24.0/c6b206e80cfd97e66a1364003724491c757b92f/kryo-2.24.0.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.12.7/a393b72134dff0751d5110c3e4808689deba75c1/scala-compiler-2.12.7.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.7/c5a8eb12969e77db4c0dd785c104b59d226b8265/scala-reflect-2.12.7.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.0.6/e22de3366a698a9f744106fb6dda4335838cf6a7/scala-xml_2.12-1.0.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.7/18c09ad08ec783f5074f4a0d6308a78759000cb1/scala-library-2.12.7.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill_2.12/0.7.6/37ab91c4029e8c34f39bfc6c2c7735ba69c6f53f/chill_2.12-0.7.6.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.minlog/minlog/1.2/59bfcd171d82f9981a5e242b9e840191f650e209/minlog-1.2.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/87c0ea803b69252868d09308b4618f766f135a96/objenesis-2.1.jar",
+                "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill-java/0.7.6/a74b8d019d6941d82ff86d1612e382f4a0ae8259/chill-java-0.7.6.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "1.0.6",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.0.6/e22de3366a698a9f744106fb6dda4335838cf6a7/scala-xml_2.12-1.0.6.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.0.6/429925530fb0f9a6fb26e5160532b7b3426557c0/scala-xml_2.12-1.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.lz4",
+                    "name": "lz4-java",
+                    "version": "1.8.0",
+                    "artifacts": [
+                        {
+                            "name": "lz4-java",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/4b986a99445e49ea5fbf5d149c4b63f6ed6c6780/lz4-java-1.8.0.jar"
+                        },
+                        {
+                            "name": "lz4-java",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.8.0/7609c362f37f0c0bd3743bc1976df2daa28ad19e/lz4-java-1.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-io",
+                    "name": "commons-io",
+                    "version": "2.8.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-io",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.8.0/eec0d4cb359930f0a7c8a9c5147019ef2cd77757/commons-io-2.8.0-sources.jar"
+                        },
+                        {
+                            "name": "commons-io",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.8.0/92999e26e6534606b5678014e66948286298a35c/commons-io-2.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.javassist",
+                    "name": "javassist",
+                    "version": "3.24.0-GA",
+                    "artifacts": [
+                        {
+                            "name": "javassist",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.24.0-GA/d7466fc2e3af7c023e95c510f06448ad29b225b3/javassist-3.24.0-GA.jar"
+                        },
+                        {
+                            "name": "javassist",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.24.0-GA/88e88c8e043968bac9b2e86df5cb4a7c2b9f0023/javassist-3.24.0-GA-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-collections",
+                    "name": "commons-collections",
+                    "version": "3.2.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-collections",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar"
+                        },
+                        {
+                            "name": "commons-collections",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-force-shading",
+                    "version": "14.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-force-shading",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-force-shading/14.0/fbb920848d55aa214ec4501af955acfd3118441f/flink-shaded-force-shading-14.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-jackson",
+                    "version": "2.12.4-14.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-jackson",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-jackson/2.12.4-14.0/6cd52de8793bda639c68b7beabd1f9aa9b6e0c14/flink-shaded-jackson-2.12.4-14.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-optimizer",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-optimizer",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-optimizer/1.14.6/79d1d31bdf95dd7b024facb5d5fcbfbe3a1daaf2/flink-optimizer-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-optimizer",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-optimizer/1.14.6/1208d2672dab755c9526e48a3a3f7d2e8844994/flink-optimizer-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-java",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-java",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-java/1.14.6/6a9b61ddde69d7f2b3589ac80ee5e09567eb1af0/flink-java-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-java",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-java/1.14.6/4241161b1137d67ff52c331f3633d698ea0a8d4e/flink-java-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-streaming-java_2.12",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-streaming-java_2.12",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-streaming-java_2.12/1.14.6/1a19d0eb6e8147381f3c29c84ee33406328235a2/flink-streaming-java_2.12-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-streaming-java_2.12",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-streaming-java_2.12/1.14.6/c73933f2c52a619bb9f1160aa03dc0fe10daa632/flink-streaming-java_2.12-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.7",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.7/c5a8eb12969e77db4c0dd785c104b59d226b8265/scala-reflect-2.12.7.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.7/98c840d3cc35317bae945ee4e7a5960b47805edb/scala-reflect-2.12.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.25",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-runtime",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-runtime",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime/1.14.6/9afa43749c11e74891fc840aac35f46a453c1be6/flink-runtime-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-runtime",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime/1.14.6/c58b413f6aa3035246da19f57e38afa6d2397435/flink-runtime-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-guava",
+                    "version": "30.1.1-jre-14.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-guava",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-guava/30.1.1-jre-14.0/78af6143a92912e0f084490fe5a8b175e541ce32/flink-shaded-guava-30.1.1-jre-14.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-clients_2.12",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-clients_2.12",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-clients_2.12/1.14.6/8829dbe839ae3195758190817cdddd94a0fb42d0/flink-clients_2.12-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-clients_2.12",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-clients_2.12/1.14.6/99c23f149cd6d4c087be7dd29e214cb2f19096c2/flink-clients_2.12-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-queryable-state-client-java",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-queryable-state-client-java",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-queryable-state-client-java/1.14.6/a850691e49221970613db574da0f6ee4a5f8e9d7/flink-queryable-state-client-java-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-queryable-state-client-java",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-queryable-state-client-java/1.14.6/3326e0e1a30c5dd36dfb17a95b31541466a1afd0/flink-queryable-state-client-java-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-metrics-core",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-metrics-core",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-metrics-core/1.14.6/d309d2263f2f1f39904cc22d1684503be9e09ea9/flink-metrics-core-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-metrics-core",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-metrics-core/1.14.6/2665076b69c3ff1ec1782e0618663fd0bc5755d8/flink-metrics-core-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.7",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.7/c57db2043a23e468ce9ae27e764c8dd8c0ad88c8/scala-library-2.12.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.7/18c09ad08ec783f5074f4a0d6308a78759000cb1/scala-library-2.12.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xerial.snappy",
+                    "name": "snappy-java",
+                    "version": "1.1.8.3",
+                    "artifacts": [
+                        {
+                            "name": "snappy-java",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.3/78adaf2e9cfe7ac991f4641a92cd4895ad972047/snappy-java-1.1.8.3-sources.jar"
+                        },
+                        {
+                            "name": "snappy-java",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.3/2c58fa5745831afa3a4290c2ce15553ff13ad0ab/snappy-java-1.1.8.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-netty",
+                    "version": "4.1.65.Final-14.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-netty",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-netty/4.1.65.Final-14.0/e1b2434e2aef7d00918bf0f9bdc8ef395b2136dd/flink-shaded-netty-4.1.65.Final-14.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-math3",
+                    "version": "3.5",
+                    "artifacts": [
+                        {
+                            "name": "commons-math3",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.5/13af68e9a11576953f5c4b09436f8207be9d3a27/commons-math3-3.5.jar"
+                        },
+                        {
+                            "name": "commons-math3",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.5/1d3f412d28c8bff0e8f048240b08bcd21cfa432e/commons-math3-3.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-zookeeper-3",
+                    "version": "3.4.14-14.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-zookeeper-3",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-zookeeper-3/3.4.14-14.0/47cb3abb9267c78c13b05aca07e4dac0426ebebb/flink-shaded-zookeeper-3-3.4.14-14.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-compiler",
+                    "version": "2.12.7",
+                    "artifacts": [
+                        {
+                            "name": "scala-compiler",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.12.7/7ed9b44d294ecea06c120018d9e2badb02ebf386/scala-compiler-2.12.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-compiler",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.12.7/a393b72134dff0751d5110c3e4808689deba75c1/scala-compiler-2.12.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "2.1",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/87c0ea803b69252868d09308b4618f766f135a96/objenesis-2.1.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/611a57d836e2c320d59f9851d4ad587f3c8472e/objenesis-2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware.minlog",
+                    "name": "minlog",
+                    "version": "1.2",
+                    "artifacts": [
+                        {
+                            "name": "minlog",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.minlog/minlog/1.2/c0bf75c30b19393673253e25708aa797a545fa10/minlog-1.2-sources.jar"
+                        },
+                        {
+                            "name": "minlog",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.minlog/minlog/1.2/59bfcd171d82f9981a5e242b9e840191f650e209/minlog-1.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-hadoop-fs",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-hadoop-fs",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-hadoop-fs/1.14.6/a6cbc8bb01ef97fcd3f05ac18e634a8c7a6548d5/flink-hadoop-fs-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-hadoop-fs",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-hadoop-fs/1.14.6/6bfbd9af95e98ce01d033895e918117f6ec621f5/flink-hadoop-fs-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.3",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/3ebabe69eba0196af9ad3a814f723fb720b9101e/logback-core-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.3",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/cfd5385e0c5ed1c8a5dce57d86e79cf357153a64/logback-classic-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "1.3.9",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.3.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/d2a489573c0ed2c4942b3660decad5d65087b406/commons-lang3-3.3.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "chill_2.12",
+                    "version": "0.7.6",
+                    "artifacts": [
+                        {
+                            "name": "chill_2.12",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill_2.12/0.7.6/f92d6d136a69572e54a469080adcb087d6efad90/chill_2.12-0.7.6-sources.jar"
+                        },
+                        {
+                            "name": "chill_2.12",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill_2.12/0.7.6/37ab91c4029e8c34f39bfc6c2c7735ba69c6f53f/chill_2.12-0.7.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-file-sink-common",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-file-sink-common",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-file-sink-common/1.14.6/9774a0e7a6bde25c150135f28874e5e31862e0e5/flink-file-sink-common-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-file-sink-common",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-file-sink-common/1.14.6/b125f5eaddd17ad89f9a4aa9499dd31d28f20c16/flink-file-sink-common-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-scala_2.12",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-scala_2.12",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-scala_2.12/1.14.6/ded06603a3ccda786ebe4e61337a1ef88cf0bd45/flink-scala_2.12-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-scala_2.12",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-scala_2.12/1.14.6/ff9e68e8d8cb35fa462d821b85f7a1e29ac05d42/flink-scala_2.12-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-cli",
+                    "name": "commons-cli",
+                    "version": "1.3.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-cli",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/12ec02d8cb9fbb33bd05506109a4fc8bcc3578/commons-cli-1.3.1-sources.jar"
+                        },
+                        {
+                            "name": "commons-cli",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-compress",
+                    "version": "1.21",
+                    "artifacts": [
+                        {
+                            "name": "commons-compress",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/b3e0a269baa0d05b02f9b4447be463d25da8c097/commons-compress-1.21-sources.jar"
+                        },
+                        {
+                            "name": "commons-compress",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "chill-java",
+                    "version": "0.7.6",
+                    "artifacts": [
+                        {
+                            "name": "chill-java",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill-java/0.7.6/66fe5add813d6406dc5ec433bbe47894be67b374/chill-java-0.7.6-sources.jar"
+                        },
+                        {
+                            "name": "chill-java",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.twitter/chill-java/0.7.6/a74b8d019d6941d82ff86d1612e382f4a0ae8259/chill-java-0.7.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.ververica",
+                    "name": "frocksdbjni",
+                    "version": "6.20.3-ververica-1.0",
+                    "artifacts": [
+                        {
+                            "name": "frocksdbjni",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.ververica/frocksdbjni/6.20.3-ververica-1.0/14f8c6ed3312a2b211e71d16eb359f6d3a6c30c3/frocksdbjni-6.20.3-ververica-1.0-sources.jar"
+                        },
+                        {
+                            "name": "frocksdbjni",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.ververica/frocksdbjni/6.20.3-ververica-1.0/bcdbcd6b5cc2daa68b90d94666c35ad6e6a6cc61/frocksdbjni-6.20.3-ververica-1.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-annotations",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-annotations",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-annotations/1.14.6/6235b31a1e1533aac662b64c3410399b32c6b2f3/flink-annotations-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-annotations",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-annotations/1.14.6/d3515f3e849b0539829c3d7fe48eead3ee8d597d/flink-annotations-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-rpc-core",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-rpc-core",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-core/1.14.6/e0c0b28d3e96d02e71afca4d0e1c052b142fafe5/flink-rpc-core-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-rpc-core",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-core/1.14.6/ad9aa1ca97f476fb39678345cc09cd7452184a28/flink-rpc-core-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-core",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-core",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-core/1.14.6/41ac4cb190816e05235f904db8c5a1979d717284/flink-core-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-core",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-core/1.14.6/e241ed705498df4286b6fd036efeb7b6cd721e97/flink-core-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-statebackend-rocksdb_2.12",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-statebackend-rocksdb_2.12",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-statebackend-rocksdb_2.12/1.14.6/da2198f9d706126a0a291476b4c5ca11f6007677/flink-statebackend-rocksdb_2.12-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-statebackend-rocksdb_2.12",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-statebackend-rocksdb_2.12/1.14.6/b7d0f2955243eff3020705a541b32b72ac5eb36f/flink-statebackend-rocksdb_2.12-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-runtime-web_2.12",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-runtime-web_2.12",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime-web_2.12/1.14.6/a04fb01a158d302396ab18a9abfc69d01edd1d16/flink-runtime-web_2.12-1.14.6.jar"
+                        },
+                        {
+                            "name": "flink-runtime-web_2.12",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-runtime-web_2.12/1.14.6/e3ab9b743008ed4a4d104a3e90406e7845313e10/flink-runtime-web_2.12-1.14.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-asm-7",
+                    "version": "7.1-14.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-asm-7",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-shaded-asm-7/7.1-14.0/b1a61ed357e24720273432e3e4d883a67ed35a56/flink-shaded-asm-7-7.1-14.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-rpc-akka-loader",
+                    "version": "1.14.6",
+                    "artifacts": [
+                        {
+                            "name": "flink-rpc-akka-loader",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-akka-loader/1.14.6/c465aae9776408acf6f2123005aa118552016a07/flink-rpc-akka-loader-1.14.6-sources.jar"
+                        },
+                        {
+                            "name": "flink-rpc-akka-loader",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/org.apache.flink/flink-rpc-akka-loader/1.14.6/152f90f242c9d71018986c0cfc715716be8600c4/flink-rpc-akka-loader-1.14.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware.kryo",
+                    "name": "kryo",
+                    "version": "2.24.0",
+                    "artifacts": [
+                        {
+                            "name": "kryo",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.kryo/kryo/2.24.0/c6b206e80cfd97e66a1364003724491c757b92f/kryo-2.24.0.jar"
+                        },
+                        {
+                            "name": "kryo",
+                            "classifier": "sources",
+                            "path": "/home/lslonina/.gradle/caches/modules-2/files-2.1/com.esotericsoftware.kryo/kryo/2.24.0/72af5078b1592b627f2b4187f95decf72829b0e9/kryo-2.24.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

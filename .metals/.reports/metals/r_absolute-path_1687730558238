@@ -1,0 +1,4 @@
+Uri: jdt://contents/flink-streaming-java_2.12-1.14.6.jar/org.apache.flink.streaming.api.environment/StreamExecutionEnvironment.class?%3Dflink-state%2F%5C%2Fhome%5C%2Flslonina%5C%2F.gradle%5C%2Fcaches%5C%2Fmodules-2%5C%2Ffiles-2.1%5C%2Forg.apache.flink%5C%2Fflink-streaming-java_2.12%5C%2F1.14.6%5C%2F1a19d0eb6e8147381f3c29c84ee33406328235a2%5C%2Fflink-streaming-java_2.12-1.14.6.jar%3D%2Fgradle_used_by_scope%3D%2Fmain%2Ctest%3D%2F%3Corg.apache.flink.streaming.api.environment%28StreamExecutionEnvironment.class
+
+Error message: Provider "jdt" not installed
+Error: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed

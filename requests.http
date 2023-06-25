@@ -1,0 +1,12 @@
+GET http://localhost:8081/jobs HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+###
+POST http://localhost:8081/jobs/768c6c29145fae332fa55115044a3a85/savepoints HTTP/1.1
+Content-Type: application/json
+
+{
+    "cancel-job": "false",
+    "target-directory": "/home/lslonina/flink-savepoints/1"
+}

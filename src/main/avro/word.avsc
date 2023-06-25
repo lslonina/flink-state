@@ -1,0 +1,15 @@
+{
+    "name": "WordData",
+    "namespace": "com.lslonina.model",
+    "type": "record",
+    "fields" : [
+        {
+            "name": "word",
+            "type": "string"
+        },
+        {
+            "name": "count",
+            "type": "int"
+        }
+    ]
+}

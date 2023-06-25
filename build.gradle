@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'com.github.davidmc24.gradle.plugin.avro' version '1.7.1'
+}
+
+repositories {
+    mavenCentral() 
+}
+
+dependencies {
+    ext {
+        flinkVersion = '1.14.6'
+    }
+
+    implementation "org.apache.flink:flink-runtime-web_2.12:$flinkVersion"
+    implementation "org.apache.flink:flink-java:$flinkVersion"
+    implementation "org.apache.flink:flink-streaming-java_2.12:$flinkVersion"
+    implementation "org.apache.flink:flink-statebackend-rocksdb_2.12:$flinkVersion"
+    implementation "org.apache.flink:flink-avro:$flinkVersion"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+    implementation "org.apache.avro:avro:1.11.1"
+}
+
+mainClassName = 'com.lslonina.flink.FlinkApplication'
+
+sourceSets.main.java.srcDirs += "$buildDir/generated-main-avro-java"
